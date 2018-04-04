@@ -351,7 +351,7 @@ $(PRELOADER_STAMP): $(PRELOADER_DEPS)
 	$(SBT.CREATE_SETTINGS) \
 		--type spl \
 		--bsp-dir $(PRELOADER_DIR) \
-		--preloader-settings-dir "../../hps_isw_handoff/$(QSYS_BASE)_$(QSYS_HPS_INST_NAME)" \
+		--preloader-settings-dir "hps_isw_handoff/$(QSYS_BASE)_$(QSYS_HPS_INST_NAME)" \
 		--settings $(PRELOADER_DIR)/settings.bsp \
 		--set spl.boot.WATCHDOG_ENABLE false
 
